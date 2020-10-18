@@ -15,7 +15,7 @@ app.use(session({
   secret: 'asdfalksdjflakdsjl@#%',
   resave: false,
   saveUninitialized: true,
-  store: new FileStore({logFn: function(){}})
+  store: new FileStore()
 }))
 
 app.get('*', function(request, response, next){
